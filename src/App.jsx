@@ -1,6 +1,14 @@
 import './App.css'
 
-
-const App = () => <h1>Our First Test</h1>;
+import LandingPage from './components/LandingPage/LandingPage'
+import Navbar from './components/Navbar/Navbar'
+const App = () => {
+    return (
+    <>
+        <Navbar />
+        <LandingPage />
+    </>
+    )
+}
 
 export default App;

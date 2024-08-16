@@ -1,0 +1,22 @@
+.landing {
+    z-index: -1;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+    scroll-snap-align: start;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.landing > h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.landingContent {
+    z-index: 1;
+}
