@@ -1,0 +1,24 @@
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide > img {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+
+.swiper-slide-prev > img, .swiper-slide-next > img, .swiper-slide > img {
+    height: 15vw;
+    width: 15vw;
+}
+
+.swiper-slide-active > img {
+    width: 30vw;
+    height: 30vw;
+}
+
+

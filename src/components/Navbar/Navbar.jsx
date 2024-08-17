@@ -1,11 +1,14 @@
 import styles from './Navbar.module.css';
 
+import Logo from '../../assets/reardenLogo.webp'
+
 const Navbar = () => {
     return(
-        <nav className={`${styles.navbar} ${styles.sticky}`}>
+        <nav className={styles.navbar}>
+            
             <div className={styles.leftNav}>
-                <img className={styles.logo} src="./images/logo.png"/>
-                <p className={styles.logoName}>Jack Halcisak</p>
+                <p className={styles.logoName}>Rearden Digital Co.</p>
+                <img className={styles.logo} src={Logo}/>
             </div>
 
             <div className={styles.rightNav}>
@@ -15,6 +18,7 @@ const Navbar = () => {
                     <li className={styles.link}><a className={styles.linky} id="contact-link">Contact</a></li>
                 </ul>
             </div>
+
         </nav>
     )
 }
