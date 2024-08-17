@@ -9,7 +9,9 @@
 }
 
 .swiper-slide > img {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all 0.2s linear;
+}
 
 .swiper-slide-prev > img, .swiper-slide-next > img, .swiper-slide > img {
     height: 15vw;

@@ -1,9 +1,55 @@
 .projectGallerySection {
-    box-sizing: border-box;
-    margin-top: 5vh;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
 }
 
+.activeSlideInfoDiv {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+}
+
+.activeTitle {
+    font-size: 2rem;
+}
+
+.activeTitle > a {
+    text-decoration: none;
+    color: white
+}
+
+.activeSlideLink {
+    display: block;
+    width: auto;
+    font-size: 1.5rem;
+}
+
+.activeSlideLink > button {
+    padding: 0.5rem;
+    border-radius: 6rem;
+    border: 1px solid #0af2fa;
+    outline: 1px solid #e31baa;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0) 0px 2px 8px;
+}
+
+.activeSlideLink > button:hover {
+    cursor: pointer;
+}
+
+.activeSlideLink > button:active {
+    position: relative;
+    top: 2px;
+}
+
+.projectGallery {
+    border: 1px solid white;
+    width: 100%;
+    height: 80vh;
+}
 
