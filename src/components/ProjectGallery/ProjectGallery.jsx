@@ -19,7 +19,7 @@ import galleryData from './projectGalleryData';
 
     return (
         <>
-        <main className={styles.projectGallerySection} id="gallerySection">
+        <section className={styles.projectGallerySection} id="gallerySection">
             <header className={styles.activeSlideInfoDiv}>
                 <a className={styles.activeTitle} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}>{galleryData[activeIndex].name}</a>
                 <a className={styles.activeSlideLink} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}><button>Visit Website</button></a>
@@ -66,7 +66,7 @@ import galleryData from './projectGalleryData';
                 })}
 
             </Swiper>
-        </main>
+        </section>
         </>
     )
 }
