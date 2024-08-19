@@ -47,10 +47,9 @@
     padding: 0.5rem;
     border-radius: 6rem;
     border: 1px solid #0af2fa;
-    outline: 1px solid #e31baa;
     background-color: black;
     color: white;
-    box-shadow: rgba(0, 0, 0) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0) 0px 2px 8px, inset 0 0 0 1px #e31baa;
     font-size: 1.5rem;
     padding: 1rem;
 }

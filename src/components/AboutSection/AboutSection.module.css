@@ -8,7 +8,6 @@
 }
 
 .aboutInfo {
-    padding-top: 1rem;
     padding-left: 1rem;
     text-wrap: auto;
     z-index: 2;
@@ -26,6 +25,18 @@
 }
 
 @media screen and (max-width: 900px) {
+    .aboutInfo > p {
+        margin:0;
+      }
+
+    .skillSet > p {
+        margin: 0;
+    }
+
+    .skillSet {
+        margin-top: 1rem;
+    }
+
     .aboutSection {
         flex-direction: column;
         justify-content: flex-start;

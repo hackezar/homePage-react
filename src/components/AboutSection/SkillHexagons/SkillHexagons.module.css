@@ -57,12 +57,12 @@
   /* mobile css */
   @media screen and (max-width: 550px) {
     .hex {
-      height: 25vw;
-      width: 25vw;
+      height: 22vw;
+      width: 22vw;
     }
     .hexLogo {
-      height: 13vw;
-      width: 13vw;
+      height: 11vw;
+      width: 11vw;
     }
 }
   @media screen and (max-width: 900px) and (min-width: 551px) {
