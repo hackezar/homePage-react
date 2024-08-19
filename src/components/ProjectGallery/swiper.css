@@ -1,4 +1,6 @@
 .swiper-wrapper {
+    width: 100vw;
+    height: auto;
     align-items: center;
 }
 
@@ -23,4 +25,10 @@
     height: 30vw;
 }
 
+@media screen and (max-width: 600px) {
+    .swiper-slide > img {
+        height: 100vw;
+        width: 100vw;
+    }
+}
 

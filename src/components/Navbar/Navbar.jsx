@@ -13,9 +13,9 @@ const Navbar = () => {
 
             <div className={styles.rightNav}>
                 <ul className={styles.pageLinks}>
-                    <li className={styles.link}><a className={styles.linky} id="gallery-link">Gallery</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="about-link">About</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="contact-link">Contact</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="gallery-link" onClick={() => document.getElementById('gallerySection').scrollIntoView({behavior: 'smooth', block: 'end'})} >Gallery</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="about-link" onClick={() => document.getElementById('aboutSection').scrollIntoView({behavior: 'smooth', block: 'end'})} >About</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="contact-link" onClick={() => document.getElementById('contactSection').scrollIntoView({behavior: 'smooth', block: 'end'})} >Contact</a></li>
                 </ul>
             </div>
 

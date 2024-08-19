@@ -1,0 +1,77 @@
+:root {
+    --color-accent1: #e31baa;
+    --color-accent2: #0af2fa;
+  }
+
+.skillsHexagons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex {
+    width: 10vw;
+    height: 10vw;
+    background: var(--color-accent2);
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    box-shadow: rgba(0, 0, 0) 0px 2px 8px;
+  }
+  
+  .hex:hover {
+    background-color: var(--color-accent1);
+  }
+  
+  .inner:hover {
+    background-color: black;
+  }
+
+  .row1, .row2, .row3, .row4 {
+    display: flex;
+  }
+  
+  .inner {
+    background-color: black;
+    -webkit-transform: scale(.95, .95);
+    -moz-transform: scale(.95, .95);
+    transform: scale(.95, .95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hexText {
+    margin-top: 0.5em;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .hexLogo {
+    margin: 0;
+    height: 7vw;
+    width: 7vw;
+  }
+
+  /* mobile css */
+  @media screen and (max-width: 550px) {
+    .hex {
+      height: 25vw;
+      width: 25vw;
+    }
+    .hexLogo {
+      height: 13vw;
+      width: 13vw;
+    }
+}
+  @media screen and (max-width: 900px) and (min-width: 551px) {
+    .hex {
+      height: 15vw;
+      width: 15vw;
+    }
+    .hexLogo {
+      height: 9vw;
+      width: 9vw;
+    }
+}

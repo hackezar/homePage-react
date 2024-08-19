@@ -5,16 +5,17 @@
 }
 
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
     display: flex;
     justify-content: space-between;
     width: 100%; /* Full width */
     height: 5vh;
-    top: 0; /* Position the navbar at the top of the page */
     z-index: 1;
     font-size: 1rem;
-}
+    background-color: #151a17;
+    z-index: 2;
+  }
 
 .leftNav {
     display: flex;
@@ -42,6 +43,7 @@
 
 .pageLinks {
     display: flex;
+    gap: 3rem;
     margin:0;
     padding: 0;
 }
@@ -103,3 +105,13 @@
   .pageLinks a:hover {
     color: white;
   }
+
+  /* mobile */
+  @media screen and (max-width: 500px) {
+    .pageLinks {
+      gap: 0;
+    }
+    .logoName {
+      display: none;
+    }
+}

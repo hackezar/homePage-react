@@ -1,0 +1,106 @@
+:root {
+    --color-accent1: #e31baa;
+    --color-accent2: #0af2fa;
+  }
+
+.contactSection {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    padding-top: 5vh;
+
+}
+
+.contactHeader {
+    height: 5vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contactBody {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.emailDiv, .phoneDiv, .linkedin, .github {
+    background-color: black;
+    box-shadow: rgba(0, 0, 0) 0px 2px 8px;
+}
+
+.fontSize1p2 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.emailDiv {
+    outline: 1px solid var(--color-accent2);
+    border: 1px solid var(--color-accent1);
+    padding: 1rem;
+}
+
+.emailDiv > p {
+    margin: 0;
+}
+
+.phoneDiv {
+    outline: 1px solid var(--color-accent2);
+    border: 1px solid var(--color-accent1);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.phoneDiv > p {
+    margin: 0;
+}
+
+.linkedin {
+    outline: 1px solid var(--color-accent2);
+    border: 1px solid var(--color-accent1);
+    padding: 1rem;
+}
+
+.linkedin > p {
+    margin: 0;
+}
+
+.github {
+    padding: 1rem;
+    outline: 1px solid var(--color-accent2);
+    border: 1px solid var(--color-accent1);
+}
+.github > p {
+    margin: 0;
+}
+
+.emailDiv:hover, .phoneDiv:hover, .linkedin:hover, .github:hover {
+    outline: 1px solid var(--color-accent1);
+    border: 1px solid var(--color-accent2);
+}
+
+@media screen and (min-width: 900px) {
+
+    .contactHeader {
+        font-size: 2.5rem;
+    }
+
+    .contactBody {
+        font-size: 2rem;
+        flex-direction: row;
+    }
+
+    .github, .emailDiv, .phoneDiv, .linkedin {
+        padding: 2rem;
+    }
+    
+}

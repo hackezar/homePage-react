@@ -21,20 +21,32 @@ import galleryData from './projectGalleryData';
         <>
         <main className={styles.projectGallerySection} id="gallerySection">
             <header className={styles.activeSlideInfoDiv}>
-                <div className={styles.activeTitle}><a target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}>{galleryData[activeIndex].name}</a></div>
+                <a className={styles.activeTitle} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}>{galleryData[activeIndex].name}</a>
                 <a className={styles.activeSlideLink} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}><button>Visit Website</button></a>
+                <p className={styles.tutorial}>{'(Swipe on image)'}</p>
             </header>
             <Swiper 
             className={styles.projectGallery}
             modules={[Navigation, Scrollbar, Pagination, Keyboard, EffectCoverflow]}
-            slidesPerView={3}
-            space-between={10}
+            slidesPerView={1}
+            navigation={{
+                enabled: false,
+            }}
+            // responsive breakpoints
+            breakpoints={{
+                // when window width is >= 500px
+                600: {
+                    slidesPerView: 3,
+                    navigation: {
+                        enabled: true,
+                    },
+                }
+            }}
             centeredSlides={true}
             loop={true}
-            navigation
             pagination={{ clickable: true }}
             keyboard
-            onSlideChangeTransitionEnd={(swiperCore) => {
+            onSlideChange={(swiperCore) => {
                 setActiveIndex(swiperCore.realIndex);
             }}
             effect={'coverflow'}
