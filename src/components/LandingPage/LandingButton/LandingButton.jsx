@@ -1,9 +1,10 @@
 import styles from './LandingButton.module.css'
+import { elementScrollIntoView } from 'seamless-scroll-polyfill'
 
 const LandingButton = () => {
     return (
         <div className={styles.btnDiv}>
-            <button className={styles.btn} id="viewGalleryBtn" onClick={setTimeout(() => document.getElementById('gallerySection').scrollIntoView({behavior: 'auto', block: 'end'}), 10)}>View My Work</button>
+            <button className={styles.btn} id="viewGalleryBtn" onClick={() => elementScrollIntoView(document.querySelector("#gallerySection"), { behavior: "smooth", block: "center"})}>View My Work</button>
         </div>
     )
 }

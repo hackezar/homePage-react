@@ -2,6 +2,8 @@ import styles from './Navbar.module.css';
 
 import Logo from '../../assets/reardenLogo.webp'
 
+import { elementScrollIntoView } from 'seamless-scroll-polyfill';
+
 const Navbar = () => {
     return(
         <nav className={styles.navbar}>
@@ -13,9 +15,9 @@ const Navbar = () => {
 
             <div className={styles.rightNav}>
                 <ul className={styles.pageLinks}>
-                    <li className={styles.link}><a className={styles.linky} id="gallery-link" onClick={setTimeout(() => document.getElementById('gallerySection').scrollIntoView({behavior: 'auto'}), 10)} >Gallery</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="about-link" onClick={setTimeout(() => document.getElementById('aboutSection').scrollIntoView({behavior: 'auto'}), 10)} >About</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="contact-link" onClick={setTimeout(() => document.getElementById('contactSection').scrollIntoView({behavior: 'auto'}), 10)} >Contact</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="gallery-link" onClick={() => elementScrollIntoView(document.querySelector('#gallerySection'), {behavior: 'smooth'})} >Gallery</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="about-link" onClick={() => elementScrollIntoView(document.querySelector('#aboutSection'), {behavior: 'smooth'})} >About</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="contact-link" onClick={() => elementScrollIntoView(document.querySelector('#contactSection'), {behavior: 'smooth'})} >Contact</a></li>
                 </ul>
             </div>
 
