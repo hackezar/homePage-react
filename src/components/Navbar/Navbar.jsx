@@ -13,9 +13,9 @@ const Navbar = () => {
 
             <div className={styles.rightNav}>
                 <ul className={styles.pageLinks}>
-                    <li className={styles.link}><a className={styles.linky} id="gallery-link" onClick={() => document.getElementById('gallerySection').scrollIntoView({behavior: 'auto'})} >Gallery</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="about-link" onClick={() => document.getElementById('aboutSection').scrollIntoView({behavior: 'auto'})} >About</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="contact-link" onClick={() => document.getElementById('contactSection').scrollIntoView({behavior: 'auto'})} >Contact</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="gallery-link" onClick={setTimeout(() => document.getElementById('gallerySection').scrollIntoView({behavior: 'auto'}), 10)} >Gallery</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="about-link" onClick={setTimeout(() => document.getElementById('aboutSection').scrollIntoView({behavior: 'auto'}), 10)} >About</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="contact-link" onClick={setTimeout(() => document.getElementById('contactSection').scrollIntoView({behavior: 'auto'}), 10)} >Contact</a></li>
                 </ul>
             </div>
 
