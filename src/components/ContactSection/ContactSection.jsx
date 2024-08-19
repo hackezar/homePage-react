@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import styles from './ContactSection.module.css';
-import GithubLogo from '../../assets/SkillIcons/github-logo.png';
-
 
 const ContactSection = () => {
 
