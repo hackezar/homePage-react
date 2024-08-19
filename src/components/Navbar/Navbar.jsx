@@ -13,9 +13,9 @@ const Navbar = () => {
 
             <div className={styles.rightNav}>
                 <ul className={styles.pageLinks}>
-                    <li className={styles.link}><a className={styles.linky} id="gallery-link" href="#gallerySection">Gallery</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="about-link" href="#aboutSection" >About</a></li>
-                    <li className={styles.link}><a className={styles.linky} id="contact-link" href="#contactSection" >Contact</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="gallery-link" href="/#gallerySection">Gallery</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="about-link" href="/#aboutSection" >About</a></li>
+                    <li className={styles.link}><a className={styles.linky} id="contact-link" href="/#contactSection" >Contact</a></li>
                 </ul>
             </div>
 
