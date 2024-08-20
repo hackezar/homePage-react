@@ -19,7 +19,6 @@ body, html {
 
 html {
   scroll-snap-type: y mandatory;
-  overflow: hidden;
 }
 
 body {
