@@ -34,7 +34,7 @@ import galleryData from './projectGalleryData';
             }}
             // responsive breakpoints
             breakpoints={{
-                // when window width is >= 500px
+                // when window width is >= 600px
                 600: {
                     slidesPerView: 3,
                     navigation: {

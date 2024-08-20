@@ -19,6 +19,13 @@ body, html {
 
 html {
   scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (max-width: 600px) {
