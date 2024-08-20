@@ -19,8 +19,8 @@ import galleryData from './projectGalleryData';
 
     return (
         <>
-        <section className={styles.projectGallerySection} id="gallerySection">
-            <header className={styles.activeSlideInfoDiv}>
+        <section className={styles.projectGallerySection}>
+            <header className={styles.activeSlideInfoDiv} id="gallerySection">
                 <a className={styles.activeTitle} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}>{galleryData[activeIndex].name}</a>
                 <a className={styles.activeSlideLink} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}><button>Visit Website</button></a>
                 <p className={styles.tutorial}>{'(Swipe on image)'}</p>

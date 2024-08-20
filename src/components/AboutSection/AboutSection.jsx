@@ -4,8 +4,8 @@ import SkillHexagons from './SkillHexagons/SkillHexagons';
 
 const AboutSection = () => {
     return (
-        <section className={styles.aboutSection} id="aboutSection">
-            <div className={styles.aboutInfo}>
+        <section className={styles.aboutSection}>
+            <div className={styles.aboutInfo} id="aboutSection">
                 <p>Founded by Jack Halcisak</p>
                 <p>Tampa, Florida, USA</p>
                 <p>Full Stack Web Development to Build Your Dream Website</p>

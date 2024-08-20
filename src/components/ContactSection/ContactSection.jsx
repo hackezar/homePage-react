@@ -17,8 +17,8 @@ const ContactSection = () => {
     }
 
     return (
-        <section className={styles.contactSection} id="contactSection">
-            <h3 className={styles.contactHeader}>Get in Touch</h3>
+        <section className={styles.contactSection}>
+            <h3 className={styles.contactHeader} id="contactSection">Get in Touch</h3>
             <div className={styles.contactBody}>
                 <a className={styles.emailDiv} href={"mailto:jackhalcisak@outlook.com"}>
                         <p>{"Email"}</p>
