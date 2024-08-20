@@ -4,7 +4,8 @@ import { scrollIntoView } from 'seamless-scroll-polyfill';
 
 const LandingButton = () => {
 
-    const handleScroll = (element) => {
+    const handleScroll = (event, element) => {
+        event.preventDefault();
         scrollIntoView(element, {
             behavior: "smooth",
             block: "start",
@@ -16,7 +17,7 @@ const LandingButton = () => {
 
     return (
         <div className={styles.btnDiv}>
-            <button onClick={() => handleScroll(document.getElementById('gallerySection'))}className={styles.btn} id="viewGalleryBtn">View My Work</button>
+            <button onClick={(event) => handleScroll(event, document.getElementById('gallerySection'))}className={styles.btn} id="viewGalleryBtn">View My Work</button>
         </div>
     )
 }

@@ -4,7 +4,8 @@ import Logo from '../../assets/reardenLogo.webp'
 
 import { scrollIntoView } from 'seamless-scroll-polyfill';
 
-const handleScroll = (element) => {
+const handleScroll = (event, element) => {
+    event.preventDefault();
     scrollIntoView(element, {
         behavior: "smooth",
         block: "start",
@@ -25,9 +26,9 @@ const Navbar = () => {
 
             <div className={styles.rightNav}>
                 <ul className={styles.pageLinks}>
-                    <li className={styles.link} onClick={() => handleScroll(document.getElementById('gallerySection'))}><a className={styles.linky} id="gallery-link">Gallery</a></li>
-                    <li className={styles.link} onClick={() => handleScroll(document.getElementById('aboutSection'))}><a className={styles.linky} id="about-link">About</a></li>
-                    <li className={styles.link} onClick={() => handleScroll(document.getElementById('contactSection'))}><a className={styles.linky} id="contact-link">Contact</a></li>
+                    <li className={styles.link} onClick={(event) => handleScroll(event, document.getElementById('gallerySection'))}><a className={styles.linky} id="gallery-link">Gallery</a></li>
+                    <li className={styles.link} onClick={(event) => handleScroll(event, document.getElementById('aboutSection'))}><a className={styles.linky} id="about-link">About</a></li>
+                    <li className={styles.link} onClick={(event) => handleScroll(event, document.getElementById('contactSection'))}><a className={styles.linky} id="contact-link">Contact</a></li>
                 </ul>
             </div>
 
