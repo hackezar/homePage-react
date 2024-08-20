@@ -6,6 +6,7 @@
 .contactSection {
     box-sizing: border-box;
     height: 100vh;
+    overflow: auto;
     width: 100%;
     scroll-snap-align: start;
     padding-top: 5vh;

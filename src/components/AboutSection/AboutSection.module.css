@@ -1,6 +1,7 @@
 .aboutSection {
     display: flex;
     height: 100vh;
+    overflow: auto;
     width: 100%;
     padding-top: 5vh;
     scroll-snap-align: start;
