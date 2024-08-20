@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
  
  import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,12 +15,11 @@ import { useState } from 'react';
 // Gallery Data
 import galleryData from './projectGalleryData';
 
- const ProjectGallery = () => {
+ const ProjectGallery = ({ refProps }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <>
-        <section className={styles.projectGallerySection}>
+        <section ref={refProps} className={styles.projectGallerySection}>
             <header className={styles.activeSlideInfoDiv} id="gallerySection">
                 <a className={styles.activeTitle} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}>{galleryData[activeIndex].name}</a>
                 <a className={styles.activeSlideLink} target="_blank" rel="noopener noreferrer" href={galleryData[activeIndex].link}><button>Visit Website</button></a>
@@ -67,7 +67,6 @@ import galleryData from './projectGalleryData';
 
             </Swiper>
         </section>
-        </>
     )
 }
 

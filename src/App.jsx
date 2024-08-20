@@ -5,15 +5,29 @@ import ProjectGallery from './components/ProjectGallery/ProjectGallery';
 import AboutSection from './components/AboutSection/AboutSection';
 import ContactSection from './components/ContactSection/ContactSection';
 
+import { useRef } from 'react';
+
 const App = () => {
+    const galleryRef = useRef();
+    const aboutRef = useRef();
+    const contactRef = useRef();
+
+    const scrollCallback = (ref) => {
+        ref.current.scrollIntoView({behavior: 'smooth'});
+    }
 
     return (
     <div className={'app'}>
-        <Navbar />
-        <LandingPage />
-        <ProjectGallery />
-        <AboutSection />
-        <ContactSection />
+        <Navbar scrollCallback={scrollCallback}
+        refProps={{
+            gallery: galleryRef,
+            about: aboutRef,
+            contact: contactRef,
+        }}/>
+        <LandingPage scrollCallback={scrollCallback} refProps={galleryRef}/>
+        <ProjectGallery refProps={galleryRef}/>
+        <AboutSection refProps={aboutRef}/>
+        <ContactSection refProps={contactRef}/>
     </div>
     )
 }

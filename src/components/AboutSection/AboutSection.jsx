@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import styles from './AboutSection.module.css';
 
 import SkillHexagons from './SkillHexagons/SkillHexagons';
 
-const AboutSection = () => {
+const AboutSection = ({ refProps }) => {
     return (
-        <section className={styles.aboutSection}>
+        <section ref={refProps} className={styles.aboutSection}>
             <div className={styles.aboutInfo} id="aboutSection">
                 <p>Founded by Jack Halcisak</p>
                 <p>Tampa, Florida, USA</p>

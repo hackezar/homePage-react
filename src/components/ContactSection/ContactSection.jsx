@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import styles from './ContactSection.module.css';
 
-const ContactSection = () => {
+const ContactSection = ({ refProps }) => {
 
     const [phoneText, setPhoneText] = useState('Phone');
 
@@ -17,7 +18,7 @@ const ContactSection = () => {
     }
 
     return (
-        <section className={styles.contactSection}>
+        <section ref={refProps} className={styles.contactSection}>
             <h3 className={styles.contactHeader} id="contactSection">Get in Touch</h3>
             <div className={styles.contactBody}>
                 <a className={styles.emailDiv} href={"mailto:jackhalcisak@outlook.com"}>
