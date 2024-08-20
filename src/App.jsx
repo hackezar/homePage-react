@@ -13,7 +13,7 @@ const App = () => {
     const contactRef = useRef();
 
     const scrollCallback = (ref) => {
-        ref.current.scrollIntoView({behavior: 'smooth'});
+        setTimeout(ref.current.scrollIntoView({behavior: 'smooth'}), 100);
     }
 
     return (
