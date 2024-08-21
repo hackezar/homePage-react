@@ -7,6 +7,7 @@ const AboutSection = ({ refProps }) => {
     return (
         <section ref={refProps} className={styles.aboutSection}>
             <div className={styles.aboutInfo} id="aboutSection">
+                <header className={styles.header}>About</header>
                 <p>Founded by Jack Halcisak</p>
                 <p>Tampa, Florida, USA</p>
                 <p>Full Stack Web Development to Build Your Dream Website</p>

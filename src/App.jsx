@@ -12,8 +12,13 @@ const App = () => {
     const aboutRef = useRef();
     const contactRef = useRef();
 
+    const resnap = () => {
+        document.getElementsByTagName("html")[0].style['scroll-snap-type'] = "y mandatory";
+    }
     const scrollCallback = (ref) => {
-        setTimeout(ref.current.scrollIntoView({behavior: 'smooth'}), 100);
+        document.getElementsByTagName("html")[0].style['scroll-snap-type'] = "initial";
+        ref.current.scrollIntoView({behavior: 'smooth'});
+        setTimeout(resnap, 500);
     }
 
     return (
